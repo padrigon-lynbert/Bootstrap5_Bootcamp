@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="style/style-albums.css"> -->
+
+    <title>ALBUMS</title>
+
+    <style>
+        body{
+            text-align: center;
+            /* font-family: Arial, Helvetica, sans-serif; */
+        }
+
+        input{
+            display: none;
+        }
+        
+        .tag{
+            font-size: 1.4rem;
+            margin: 1.5rem;
+            padding: 5px 1.8rem;
+            border-radius: 50px;
+            background-color: #efefef;
+            display: inline-block;
+            color: black;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+
+        img{
+            width: 300px;
+            height: 300px;
+            padding: 3px;
+        }
+
+        #dark:checked ~ .images > img:not([class *="dark"]),
+        #green:checked ~ .images > img:not([class *="green"]),
+        #violet:checked ~ .images > img:not([class *="violet"]){
+            width: 0px;
+            height: 0px;
+        }
+        h2{
+            padding-top: 10px;
+        }
+
+        label:hover#kru{
+            background: linear-gradient(to right, pink, chartreuse, rgb(93, 179, 255));
+            /* background-color: black; color: white; */
+        }
+        label:hover#blabla{
+            background-color: black; color: white;
+        }
+        label:hover#ih{
+            background-color: chartreuse; color: black;
+        }
+        label:hover#sus{
+            background-color: rgb(244, 30, 255); color: rgb(0, 0, 0);
+        }
+            
+    footer{
+        display: block;
+        clear: both;
+        color: springgreen;
+
+        position: fixed;
+        bottom: 0;
+        
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(51, 51, 51);
+
+        font-size: small;
+        
+        /* margin: 10px; */
+        /* color: white; */
+        /* width: 100%; */ 
+    }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><i class="bi bi-house-fill" style="color: rgb(157, 156, 156);"></i></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#learn" class="nav-link"><i class="bi bi-card-image" style="color: chartreuse;"></i></a> 
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link"><i class="bi bi-info-circle-fill"></i></a> 
+                        </li>
+                       
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <h2>Filter Images</h2>
+
+    <input type="radio" id="all" name="raidoBtn">
+    <input type="radio" id="dark" name="raidoBtn">
+    <input type="radio" id="green" name="raidoBtn">
+    <input type="radio" id="violet" name="raidoBtn">
+
+    <label for="all" class="tag all" id="kru">All</label>
+    <label for="dark" class="tag dark" id="blabla">Dark</label>
+    <label for="green" class="tag green" id="ih">Green</label>
+    <label for="violet" class="tag violet" id="sus">Violet</label>
+
+    <br>
+
+    <div class="images">
+        <img src="images3/dark/aventador.jpg"class="dark">
+        <img src="images3/dark/heart.jpg" class="dark">
+        <img src="images3/dark/photo1.jpg" class="dark">
+        <img src="images3/dark/single-rose-sabrina-hall-.jpg" class="dark">
+        <img src="images3/dark/smiley.png" class="dark">
+
+        <img src="images3/green/aventador.jpg" class="green">
+        <img src="images3/green/bottle.jpg" class="green">
+        <img src="images3/green/loki.avif" class="green">
+        <img src="images3/green/naature.jpg" class="green">
+        
+        <img src="images3/violet/galaxy.jpg" alt="" class="violet">
+        <img src="images3/violet/joker.jpg" alt="" class="violet">
+        <img src="images3/violet/smoke.webp" alt="" class="violet">
+        
+    </div>
+
+<!-- boxes -->
+
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-briefcase-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Certificates | Education</h3>
+                            <p class="card-text">Molestiae quia maiores tempore aut quidem impedit culpa provident! Error, ipsam emetidor sapiente iure iste incidunt illum ut eveniet, soluta nemo quam ducimus!</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-stars"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Experiences</h3>
+                                <p class="card-text">Molestiae quia maiores tempore aut quidem impedit culpa provident! Error, ipsam sapiente iure iste incidunt illum ut eveniet, soluta nemo quam ducimus!</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Projects</h3>
+                                <p class="card-text">All graded projects and lessons done this sem. Lorem ipsum dolor sit, amet consectetur palahar bixkur adipisicing elit. Quis, eum, explicabo quidem. </p>
+                                <a href="portfolio.html" class="btn btn-primary">Portfolio</a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!-- footer -->
+<footer>
+    &copy; @Lynbert copyright reserved 
+</footer>
+
+
+
+
+
+</body>
+</html>
