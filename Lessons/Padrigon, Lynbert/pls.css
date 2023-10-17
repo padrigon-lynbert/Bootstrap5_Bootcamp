@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.fullscreen-table {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center the table horizontally */
+    align-items: center; /* Center the table vertically */
+}
+
+
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+td, th{
+    /* border: 5px solid; Wednesday,
+    kung kaagaw ko ang lahat kasama na bf mo,
+    may pag-asa bang makilala ka? - Narda*/ 
+    border: 2px black solid;
+}
+
+
+
